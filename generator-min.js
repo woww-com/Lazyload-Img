@@ -1,0 +1,1 @@
+let _textArea=document.querySelector("textarea"),_btn=document.querySelector("button");_btn.addEventListener("click",()=>{let e=_textArea.value,t=document.createElement("div");t.innerHTML=e;let r=t.querySelectorAll("img"),c=new Array;r.forEach(e=>c.push(`"${e.src}"`)),_textArea.value=`<script type="text/javascript">const _chapterImage = [${c.join(", ")}]</script>`});
